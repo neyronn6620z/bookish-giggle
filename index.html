@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Завод — это п*здец как круто!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>10 причин, почему на заводе ахуенно</h1>
+    <p>(и почему ты, долбаёб, до сих пор не с нами)</p>
+  </header>
+
+  <main>
+    <!-- Причина 1 -->
+    <section class="reason">
+      <h2>Причина 1: Матом ругаться можно сколько влезет</h2>
+      <p>Никто не посмотрит на тебя как на психа. Тут все свои, долбаёбы!</p>
+      <button onclick="scream()">Крикнуть матом</button>
+      <audio id="scream-audio" src="scream.mp3"></audio>
+    </section>
+
+    <!-- Причина 2 -->
+    <section class="reason">
+      <h2>Причина 2: Хулиганить можно (ну почти)</h2>
+      <p>Спрячь бракованную деталь от начальника, пока этот долбаёб не нашёл твой stash!</p>
+      <button onclick="hideDetail()">Спрятать деталь</button>
+      <p id="detail-status"></p>
+    </section>
+
+    <!-- Причина 3 -->
+    <section class="reason">
+      <h2>Причина 3: Чувствуешь себя богом, когда чинишь станок</h2>
+      <p>Станок сломался? Почини его, долбаёб! Ты же не лох!</p>
+      <button onclick="fixMachine()">Починить станок</button>
+      <p id="machine-status">Станок сломан. Как всегда.</p>
+    </section>
+
+    <!-- Причина 4 -->
+    <section class="reason">
+      <h2>Причина 4: Чай с печеньками и разговоры про начальника</h2>
+      <p>Сгенерируй фразу про начальника, чтобы посмеяться:</p>
+      <button onclick="generatePhrase()">Сгенерировать</button>
+      <p id="boss-phrase"></p>
+    </section>
+
+    <!-- Причина 5 -->
+    <section class="reason">
+      <h2>Причина 5: Завтра будет такой же день</h2>
+      <p>Таймер до конца смены (если повезёт, долбаёб):</p>
+      <p id="shift-timer">08:00:00</p>
+    </section>
+
+    <!-- Причина 6 -->
+    <section class="reason">
+      <h2>Причина 6: Ты всегда знаешь, кто тут главный долбаёб</h2>
+      <p>Начальник — это не человек, это состояние души. И душа у него, блять, кривая.</p>
+      <button onclick="roastBoss()">Оскорбить начальника</button>
+      <p id="roast-result"></p>
+    </section>
+  </main>
+
+  <footer>
+  <p>Хочешь работать у нас? Напиши нам, и мы расскажем, как тебя заебать на всю катушку, долбаёб!</p>
+  <button onclick="contact()">Написать</button>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
